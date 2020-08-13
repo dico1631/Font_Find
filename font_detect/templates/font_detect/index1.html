@@ -13,24 +13,6 @@
       </div>
     </div>
   </form>
-  <p class="message">판정 이미지</p>
-  <ul>
-    {% if result_name != "" %}
-      <li>{{ result_name }}</li>
-    {% else %}
-      <li>이미지 없음</li>
-    {% endif %}
-  </ul>
-  <p class="message">판정 결과</p>
-  <ol>
-    {% if result_list %}
-      {% for result in result_list %}
-        <li>{{ result }}</li>
-      {% endfor %}
-    {% else %}
-        <li>결과 없음</li>
-    {% endif %}
-  </ol>
   <div class="image">
     {% if result_img != "" %}
         <img src="data:image/png;base64,{{result_img}}" />

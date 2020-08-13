@@ -266,7 +266,8 @@
         </div>
       </div>
     </form>
-    <p class="message">판정 이미지</p>
+    <!-- 판정 결과를 % 로 보여주려면 주석 해제 -->
+    <!-- <p class="message">판정 이미지</p>
     <ul>
       {% if result_name != "" %}
       <li>{{ result_name }}</li>
@@ -283,7 +284,7 @@
       {% else %}
       <li>결과 없음</li>
       {% endif %}
-    </ol>
+    </ol> -->
     <div class="image">
       {% if result_img != "" %}
         {% for html_content in str_list %}
